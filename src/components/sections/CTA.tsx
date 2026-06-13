@@ -17,8 +17,8 @@ export default function CTA() {
       className="py-28 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden"
     >
       {/* BG blobs */}
-      <div className="absolute top-0 left-1/3 w-80 h-80 bg-brand-100 rounded-full blur-3xl opacity-40 pointer-events-none" />
-      <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30 pointer-events-none" />
+      <div className="absolute top-0 left-1/3 w-80 h-80 bg-brand-100 rounded-full blur-3xl opacity-40 pointer-events-none gpu-layer" />
+      <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-purple-100 rounded-full blur-3xl opacity-30 pointer-events-none gpu-layer" />
 
       <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div

@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white pt-16">
       {/* Background decorations */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none gpu-layer">
         <div className="absolute top-20 left-1/4 w-96 h-96 bg-brand-100 rounded-full blur-3xl opacity-40" />
         <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-purple-100 rounded-full blur-3xl opacity-30" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-brand-50 to-purple-50 rounded-full blur-3xl opacity-60" />
@@ -189,7 +189,7 @@ export default function Hero() {
                       ease: "easeInOut",
                       delay: i * 0.5,
                     }}
-                    className="glass rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2 whitespace-nowrap"
+                    className="glass rounded-2xl px-4 py-3 shadow-lg flex items-center gap-2 whitespace-nowrap gpu-layer"
                   >
                     <span className="text-lg">{card.icon}</span>
                     <span className="text-sm font-semibold text-gray-700">
@@ -212,7 +212,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-5 h-8 border-2 border-gray-300 rounded-full flex justify-center pt-1.5"
+            className="w-5 h-8 border-2 border-gray-300 rounded-full flex justify-center pt-1.5 gpu-layer"
           >
             <div className="w-1 h-2 bg-gray-400 rounded-full" />
           </motion.div>
