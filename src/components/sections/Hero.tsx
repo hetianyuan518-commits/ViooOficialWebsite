@@ -33,8 +33,8 @@ export default function Hero() {
           {/* Left content */}
           <div>
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 bg-brand-50 border border-brand-100 text-brand-700 text-sm font-medium px-4 py-2 rounded-full mb-6"
             >
@@ -43,8 +43,8 @@ export default function Hero() {
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
             >
@@ -54,8 +54,8 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-500 leading-relaxed mb-8 max-w-xl"
             >
@@ -65,8 +65,8 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
@@ -96,8 +96,8 @@ export default function Hero() {
 
             {/* Social proof */}
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ y: 12 }}
+              animate={{ y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="mt-10 flex items-center gap-6"
             >
@@ -125,8 +125,8 @@ export default function Hero() {
           {/* Right: Illustration / mock UI */}
           <div className="relative hidden lg:flex items-center justify-center">
             <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
               transition={{ duration: 0.7, delay: 0.2 }}
               className="relative"
             >
@@ -169,8 +169,8 @@ export default function Hero() {
               {floatingCards.map((card, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ y: 12 }}
+                  animate={{ y: 0 }}
                   transition={{ duration: 0.5, delay: 0.5 + i * 0.15 }}
                   style={{ x: card.x, y: card.y }}
                   className={`absolute ${
@@ -204,8 +204,8 @@ export default function Hero() {
 
         {/* Scroll indicator */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ y: 8 }}
+          animate={{ y: 0 }}
           transition={{ delay: 1.2 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
